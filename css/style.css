@@ -29,6 +29,11 @@ body {
     background-color: var(--bg-color);
 }
 
+body.dark-mode {
+    background-color: #181a1b;
+    color: #f1f1f1;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -41,6 +46,10 @@ a {
 
 a:hover {
     color: var(--secondary-color);
+}
+
+body.dark-mode a {
+    color: #f1f1f1;
 }
 
 ul {
@@ -100,6 +109,11 @@ header {
     padding: 0 2rem;
 }
 
+body.dark-mode header {
+    background: #222325;
+    color: #f1f1f1;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -123,6 +137,10 @@ nav {
     position: relative;
 }
 
+body.dark-mode .nav-links a {
+    color: #f1f1f1;
+}
+
 .nav-links a::after {
     content: '';
     position: absolute;
@@ -137,6 +155,10 @@ nav {
 .nav-links a:hover::after,
 .nav-links a.active::after {
     width: 100%;
+}
+
+body.dark-mode .nav-links a.active {
+    color: #ffd700;
 }
 
 .menu-toggle {
@@ -197,9 +219,19 @@ main {
     transition: var(--transition);
 }
 
+body.dark-mode .card {
+    background: #23272b;
+    color: #f1f1f1;
+    border-color: #333;
+}
+
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .feature-cards .card {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 
 .card i {
@@ -441,6 +473,11 @@ footer {
     color: white;
     padding: 2rem 0;
     text-align: center;
+}
+
+body.dark-mode footer {
+    background: #222325;
+    color: #f1f1f1;
 }
 
 /* Responsive Design */
